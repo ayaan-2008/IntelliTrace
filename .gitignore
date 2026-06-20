@@ -1,0 +1,26 @@
+# Secrets
+.env
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Pytest cache
+.pytest_cache/
+
+# Build artifacts
+*.egg-info/
+
+# Database
+*.db
+
+# ML model artifacts
+ml_models/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
