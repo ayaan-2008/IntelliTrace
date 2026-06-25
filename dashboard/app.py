@@ -156,12 +156,23 @@ def show_dashboard():
     with mc1:
         if st.button("📱 Devices", use_container_width=True):
             st.switch_page("pages/1_Devices.py")
+        if st.button("🧠 Stress & Wellness", use_container_width=True):
+            st.switch_page("pages/4_Stress_Wellness.py")
     with mc2:
         if st.button("📈 Telemetry", use_container_width=True):
             st.switch_page("pages/2_Telemetry.py")
+        if st.button("🌍 Environmental", use_container_width=True):
+            st.switch_page("pages/5_Environmental_Health.py")
     with mc3:
         if st.button("🚨 Alerts", use_container_width=True):
             st.switch_page("pages/3_Alerts.py")
+        if st.button("😴 Sleep Analytics", use_container_width=True):
+            st.switch_page("pages/6_Sleep_Analytics.py")
+
+    mc4, mc5, mc6 = st.columns(3)
+    with mc4:
+        if st.button("💪 Muscle & Recovery", use_container_width=True):
+            st.switch_page("pages/7_Muscle_Recovery.py")
 
 
 if st.session_state.token:
